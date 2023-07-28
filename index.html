@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora HTML</title>
+    <script src="./index.js" defer></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+        }
+        input{
+            display: block;
+            margin: auto;
+            margin-bottom: 15px;
+        }
+        #calcular {
+            padding: 10px;
+            width: 120px;
+            background-color: rgb(255, 253, 116);
+            border: 1px black solid;
+            font-size: 15px;
+        }
+        #calcular:hover {
+            transform: scale(1.2);
+            transition: 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora HTML</h1>
+    <input type="text" id="op1" placeholder="Operador 1">
+    <input type="text" id="operacion" placeholder="+, -, *, /">
+    <input type="text" id="op2" placeholder="Operador 2">
+    <input type="submit" value="Calcular" id="calcular">
+    <p id="resultado"></p>
+</body>
+</html>
